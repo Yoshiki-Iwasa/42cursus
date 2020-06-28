@@ -6,7 +6,7 @@
 /*   By: yiwasa <yiwasa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 11:30:25 by yiwasa            #+#    #+#             */
-/*   Updated: 2020/06/28 10:59:53 by yiwasa           ###   ########.fr       */
+/*   Updated: 2020/06/28 18:34:20 by yiwasa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,49 +83,49 @@ int		get_next_line(int fd, char **line)
 //ファイル一個、読み込むのはできた。
 //ファイルの内容によって例外処理しよう。
 // 改行だけ -> 1、何にもなし-> 0、非表示もじ、
-// int main()
-// {
-// 	int fd[4];
-// 	char *line;
+int main()
+{
+	int fd[4];
+	char *line;
 
-// 	printf("%zu\n",SIZE_MAX);
-// 	fd[0] = open("text.txt",O_RDONLY);
-// 	fd[1] = open("one.txt",O_RDONLY);
-// 	fd[2] = open("two.txt",O_RDONLY);
-// 	fd[3] = open("three.txt",O_RDONLY);
-// 	ft_putstr_fd("-----------1週目----------\n",1);
+	printf("%zu\n",SIZE_MAX);
+	fd[0] = open("text.txt",O_RDONLY);
+	fd[1] = open("one.txt",O_RDONLY);
+	fd[2] = open("two.txt",O_RDONLY);
+	fd[3] = open("three.txt",O_RDONLY);
+	ft_putstr_fd("-----------1週目----------\n",1);
 
-// 	get_next_line(fd[0],&line);
-// 	ft_putchar_fd('\n',1);
+	get_next_line(fd[0],&line);
+	ft_putchar_fd('\n',1);
 
 
-// 	get_next_line(fd[1],&line);
-// 	ft_putchar_fd('\n',1);
+	get_next_line(fd[1],&line);
+	ft_putchar_fd('\n',1);
 	
 
-// 	get_next_line(fd[2],&line);
-// 	ft_putchar_fd('\n',1);
+	get_next_line(fd[2],&line);
+	ft_putchar_fd('\n',1);
 
-// 	get_next_line(fd[3],&line);
-// 	ft_putchar_fd('\n',1);
+	get_next_line(fd[3],&line);
+	ft_putchar_fd('\n',1);
 	
-// 	ft_putstr_fd("-----------2週目----------\n",1);
-// 	get_next_line(fd[0],&line);
-// 	ft_putchar_fd('\n',1);
+	ft_putstr_fd("-----------2週目----------\n",1);
+	get_next_line(fd[0],&line);
+	ft_putchar_fd('\n',1);
 
 
-// 	get_next_line(fd[1],&line);
-// 	ft_putchar_fd('\n',1);
+	get_next_line(fd[1],&line);
+	ft_putchar_fd('\n',1);
 	
 
-// 	get_next_line(fd[2],&line);
-// 	ft_putchar_fd('\n',1);
+	get_next_line(fd[2],&line);
+	ft_putchar_fd('\n',1);
 
-// 	get_next_line(fd[3],&line);
-// 	ft_putchar_fd('\n',1);
-// 	// while(get_next_line(fd,&line))
-// 	// {
-// 	// 	ft_putstr_fd(line,fd);
-// 	// }
-// 	return (0);
-// }
+	get_next_line(fd[3],&line);
+	ft_putchar_fd('\n',1);
+	// while(get_next_line(fd,&line))
+	// {
+	// 	ft_putstr_fd(line,fd);
+	// }
+	return (0);
+}
