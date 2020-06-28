@@ -6,7 +6,9 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <limits.h>
-#define BUFFER_SIZE 100000
+// BUFFER_SIZE は8384698 がmax だということがわかった。
+// #define BUFFER_SIZE 8384698
+#define MAX_FD 8200
 int get_next_line(int fd, char **line);
 char	*ft_strdup(const char *src);
 size_t		ft_strlen(const char *str);
